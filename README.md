@@ -31,7 +31,7 @@ Here are some ideas to get you started:
 
 ![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=FerrisEvans&theme=react&hide+border=true&hide_title=true&radius=10)
 
-<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&layout=compact&theme=react&locale=en" />
+<img width="830px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&layout=compact&theme=react&locale=en" />
 
 <hr />
 <div style="text-align:center;">
