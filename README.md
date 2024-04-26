@@ -23,7 +23,7 @@ Here are some ideas to get you started:
 
 📫 How to reach me: [ferris.evans@outlook.com](mailto:ferris.evans@outlook.com)
 
-<img align="" height="137px" src="https://github-readme-stats.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" /><img height="137px" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&show_icons=true&include_all_commits=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&mode=weekly&background=0%2C73FA79%2C4BAAEB&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite" />
+<img align="" height="137px" style="margin-right:'10px';" src="https://github-readme-stats.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" /><img height="137px" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&show_icons=true&include_all_commits=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&mode=weekly&background=0%2C73FA79%2C4BAAEB&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite" />
 
 ![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=FerrisEvans&theme=react&hide+border=true&hide_title=true&radius=10)
 
