@@ -20,12 +20,10 @@ Here are some ideas to get you started:
     <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+World!+👋;This+is+Ferris+💻;Nice+to+meet+you!&center=true&size=30">
   </a>
 </h1>
-
-<div style="text-align:center;">
-  
-</div>
+<hr />
 
 📫 How to reach me: [ferris.evans@outlook.com](mailto:ferris.evans@outlook.com)   <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=FerrisEvans">
+
 <hr />
 <div style="text-align:center;">
   <img height="141px" style="display:inline-block; margin-right:10px;" src="https://github-readme-stats.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
