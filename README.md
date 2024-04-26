@@ -20,7 +20,6 @@ Here are some ideas to get you started:
     <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+World!+👋;This+is+Ferris+💻;Nice+to+meet+you!&center=true&size=30">
   </a>
 </h1>
-<hr />
 
 📫 How to reach me: [ferris.evans@outlook.com](mailto:ferris.evans@outlook.com)   <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=FerrisEvans">
 
