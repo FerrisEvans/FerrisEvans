@@ -33,7 +33,17 @@ Here are some ideas to get you started:
 <br />
 
 ### My Commit Trends
-![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=FerrisEvans&theme=react&hide+border=true&hide_title=true&radius=10)
+<!--
+<div>
+  <a href="">
+    
+  </a>
+</div>
+-->
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm)](https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm)[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math)](https://github.com/FerrisEvans/iris-math)
+
+### Recently Working On
+](https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm)[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math)](https://github.com/FerrisEvans/iris-math)
 
 ### My Favourite Langs
 <img width="846px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&layout=compact&theme=react&locale=en" />
