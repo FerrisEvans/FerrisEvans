@@ -37,7 +37,7 @@ Here are some ideas to get you started:
 ![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=FerrisEvans&theme=react&hide+border=true&hide_title=true&radius=10)
 
 ### Recently Working On
-<div><a style="margin-right:10px;" href="https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm" /></a><a href="https://github.com/FerrisEvans/iris-math"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math" /></a></div>
+<div><a href="https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm" /></a>  <a href="https://github.com/FerrisEvans/iris-math"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math" /></a></div>
 
 ### My Favourite Langs
 <img width="846px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&layout=compact&theme=react&locale=en" />
