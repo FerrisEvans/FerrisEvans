@@ -14,7 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<hr />
 
 <h1 align="center">
   <a href="https://git.io/typing-svg">
