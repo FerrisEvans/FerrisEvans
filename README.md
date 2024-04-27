@@ -35,11 +35,11 @@ Here are some ideas to get you started:
 ### My Commit Trends
 
 <div>
-  <a style="display:inline-block; margin-right:100px;" href="https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm">
-    <img height="140px" style="display:inline-block; margin-right:10px;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm" />
+  <a href="https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm">
+    <img height="135px" style="display:inline-block; margin-right:10px;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm" />
   </a>
   <a href="https://github.com/FerrisEvans/iris-math">
-    <img height="140px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math" />
+    <img height="135px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math" />
   </a>
 </div>
 
