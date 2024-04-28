@@ -40,6 +40,6 @@ Here are some ideas to get you started:
 <div><a href="https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm" /></a>    <a href="https://github.com/FerrisEvans/iris-math"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math" /></a></div>
 
 ### My Favourite Langs
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&layout=donut&theme=react&locale=en" />
+<img width="846px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&layout=donut&theme=react&locale=en" />
 
 <hr />
