@@ -39,8 +39,8 @@ Here are some ideas to get you started:
 <div><a href="https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm" /></a>    <a href="https://github.com/FerrisEvans/iris-math"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math" /></a></div>
 
 ### My Favourite Langs
-<!-- width="846px" &layout=donut -->
+<!-- width="846px" &layout=donut &exclude_repo=iris-math -->
 
-<img width="846px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&size_weight=0.5&count_weight=0.5&exclude_repo=iris-math" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&size_weight=0.5&count_weight=0.5&hide=Jupyter%20Notebook" />
 
 <hr />
