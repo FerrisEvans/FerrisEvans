@@ -40,6 +40,6 @@ Here are some ideas to get you started:
 
 ### My Favourite Langs
 <!-- width="846px" &layout=donut -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&size_weight=0.5&count_weight=0.5" />
 
 <hr />
