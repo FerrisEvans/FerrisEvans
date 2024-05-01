@@ -41,6 +41,6 @@ Here are some ideas to get you started:
 ### My Favourite Langs
 <!-- width="846px" &layout=donut -->
 
-<img width="846px src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&size_weight=0.5&count_weight=0.5&exclude_repo=iris-math" />
+<img width="846px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&size_weight=0.5&count_weight=0.5&exclude_repo=iris-math" />
 
 <hr />
