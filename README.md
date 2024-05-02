@@ -13,6 +13,8 @@ Here are some ideas to get you started:
 -  ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+
+  <img height="143.5px" style="display:inline-block; margin-right:10px;" src="https://github-readme-stats.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
 -->
 
 <h1 align="center">
@@ -27,7 +29,7 @@ Here are some ideas to get you started:
 
 ### My Basic Statistics
 <div style="text-align:center;">
-  <img height="143.5px" style="display:inline-block; margin-right:10px;" src="https://github-readme-stats.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
+  <img height="143.5px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api?username=FerrisEvans" />
   <img height="143.5px" style="display:inline-block;" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&show_icons=true&include_all_commits=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&mode=weekly&background=0%2C73FA79%2C4BAAEB&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite" />
 </div>
 
