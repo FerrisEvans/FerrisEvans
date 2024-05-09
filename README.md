@@ -46,6 +46,6 @@ Here are some ideas to get you started:
 <img width="846px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&size_weight=0.5&count_weight=0.5&hide=Jupyter%20Notebook" />
 -->
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML&exclude_repo=yulequan-relations-graph&size_weight=0.5&count_weight=0.5" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML" />
 
 <hr />
