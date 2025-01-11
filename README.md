@@ -37,8 +37,16 @@ Here are some ideas to get you started:
 
 ![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=FerrisEvans&theme=react&hide+border=true&hide_title=true&radius=10)
 
+<!--
 ### Recently Working On
-<div><!-- <a href="https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm&theme=react" /></a> -->    <a href="https://github.com/FerrisEvans/iris-math"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math&theme=react" /></a></div>
+<div><a href="https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm&theme=react" /></a>    <a href="https://github.com/FerrisEvans/iris-math"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math&theme=react" /></a></div>
+--> 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/FerrisEvans/FerrisEvans/blob/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/FerrisEvans/FerrisEvans/blob/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="github-snake.svg" />
+</picture>
+</br>
 
 ### My Favourite Langs
 <!-- width="846px" &layout=donut &exclude_repo=iris-math -->
