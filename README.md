@@ -29,8 +29,9 @@ Here are some ideas to get you started:
 
 ### My Basic Statistics
 <div style="text-align:center;">
-  <img height="143.5px" style="display:inline-block;" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
-  <img height="143.5px" style="display:inline-block;" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&show_icons=true&include_all_commits=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&mode=weekly&background=0%2C73FA79%2C4BAAEB&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite" />
+  <!-- <img height="143.5px" style="display:inline-block;" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" /> -->
+  <img height="140px" style="display:inline-block; max-width: 100%;" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
+  <img height="140px" style="display:inline-block; max-width: 100%;" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&show_icons=true&include_all_commits=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&mode=weekly&background=0%2C73FA79%2C4BAAEB&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite" />
 </div>
 
 ### My Commit Trends
@@ -52,6 +53,6 @@ Here are some ideas to get you started:
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less&size_weight=0.4&count_weight=0.6" />
 -->
 
-<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=8&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook&size_weight=0.8&count_weight=0.2" />
+<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=8&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook" />
 
 <hr />
