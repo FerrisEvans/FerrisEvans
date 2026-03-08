@@ -29,7 +29,7 @@ Here are some ideas to get you started:
 
 ### My Basic Statistics
 <div style="text-align:center;">
-  <img height="143.5px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
+  <img height="143.5px" style="display:inline-block;" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
   <img height="143.5px" style="display:inline-block;" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&show_icons=true&include_all_commits=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&mode=weekly&background=0%2C73FA79%2C4BAAEB&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite" />
 </div>
 
@@ -37,10 +37,6 @@ Here are some ideas to get you started:
 
 ![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=FerrisEvans&theme=react&hide+border=true&hide_title=true&radius=10)
 
-<!--
-### Recently Working On
-<div><a href="https://github.com/FerrisEvans/Fuck-Data-Structures-and-Algorithm"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=Fuck-Data-Structures-and-Algorithm&theme=react" /></a>    <a href="https://github.com/FerrisEvans/iris-math"><img height="126px" style="display:inline-block;" src="https://github-readme-stats.vercel.app/api/pin/?username=FerrisEvans&repo=iris-math&theme=react" /></a></div>
---> 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/FerrisEvans/FerrisEvans/blob/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/FerrisEvans/FerrisEvans/blob/output/github-contribution-grid-snake.svg" />
@@ -56,6 +52,6 @@ Here are some ideas to get you started:
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less&size_weight=0.4&count_weight=0.6" />
 -->
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&layout=compact&langs_count=8&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook&size_weight=0.8&count_weight=0.2" />
+<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=8&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook&size_weight=0.8&count_weight=0.2" />
 
 <hr />
