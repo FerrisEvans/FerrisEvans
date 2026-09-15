@@ -17,8 +17,7 @@ on:
     - .github/profile-3d-settings.json
 
 env:
-  # single place to switch the theme of every generated card
-  # (see the theme list of vn7n24fzkq/github-profile-summary-cards; github-stats-extended cards in README.md use the same name)
+  # theme of the profile summary cards (see the theme list of vn7n24fzkq/github-profile-summary-cards)
   CARD_THEME: radical
 
 jobs:
@@ -36,8 +35,11 @@ jobs:
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
           options: >-
-            {"user": "${{ github.repository_owner }}", "theme": "${{ env.CARD_THEME }}",
-            "hide_border": "true", "timezone": "Asia/Shanghai", "exclude_days": "Sun,Sat"}
+            {"user": "${{ github.repository_owner }}", "theme": "oceanic-next",
+            "hide_border": "true", "timezone": "Asia/Shanghai", "exclude_days": "Sun,Sat",
+            "ring": "F06EA9", "background": "0,FFC2E0,FF9ECD", "fire": "FF6FB5",
+            "currStreakLabel": "D6338F", "stroke": "AE296C", "currStreakNum": "D6412A",
+            "sideNums": "D6412A", "sideLabels": "D6338F", "dates": "CA5F82", "excludeDaysLabel": "CA5F82"}
           path: dist/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 

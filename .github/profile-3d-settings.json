@@ -1,27 +1,27 @@
 [
   {
     "type": "normal",
-    "fileName": "profile-radical.svg",
-    "backgroundColor": "#141321",
-    "foregroundColor": "#a9fef7",
-    "strongColor": "#fe428e",
-    "weakColor": "#6e6a86",
-    "radarColor": "#ae81ff",
+    "fileName": "profile-pink.svg",
+    "backgroundColor": "#ffc2e0",
+    "foregroundColor": "#5c1046",
+    "strongColor": "#d6338f",
+    "weakColor": "#ca5f82",
+    "radarColor": "#f06ea9",
     "growingAnimation": true,
-    "contribColors": ["#221f33", "#5b1f47", "#94256a", "#cf2f82", "#fe428e"]
+    "contribColors": ["#ffe3f0", "#ff9ecd", "#f06ea9", "#d6338f", "#ae296c"]
   },
   {
     "type": "radar_contrib_only",
-    "fileName": "radar-radical.svg",
-    "backgroundColor": "#141321",
-    "foregroundColor": "#a9fef7",
-    "weakColor": "#6e6a86",
-    "radarColor": "#fe428e"
+    "fileName": "radar-pink.svg",
+    "backgroundColor": "#ffc2e0",
+    "foregroundColor": "#5c1046",
+    "weakColor": "#ca5f82",
+    "radarColor": "#f06ea9"
   },
   {
     "type": "pie_lang_only",
-    "fileName": "pie-lang-radical.svg",
-    "backgroundColor": "#141321",
-    "foregroundColor": "#a9fef7"
+    "fileName": "pie-lang-pink.svg",
+    "backgroundColor": "#ffc2e0",
+    "foregroundColor": "#5c1046"
   }
 ]
