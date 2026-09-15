@@ -50,7 +50,7 @@ Here are some ideas to get you started:
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FerrisEvans&langs_count=20&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less&size_weight=0.4&count_weight=0.6" />
 -->
 
-<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=8&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook,Less&size_weight=0.7&count_weight=0.3" />
+<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=8&hide_title=true&hide_border=true&theme=radical&bg_color=0,ffc2e0,ff9ecd&title_color=5c1046&text_color=5c1046&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook,Less&size_weight=0.7&count_weight=0.3" />
 
 <h1 align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffc2e0,100:ff9ecd&height=120&section=footer&text=thanks%20for%20visiting!%20%F0%9F%92%95&fontSize=24&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%" />
