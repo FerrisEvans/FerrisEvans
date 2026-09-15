@@ -16,11 +16,10 @@ Here are some ideas to get you started:
 
   <img height="143.5px" style="display:inline-block; margin-right:10px;" src="https://github-readme-stats.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
 -->
-
 <h1 align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+World!+👋;This+is+Ferris!+💻;Nice+to+meet+you!&center=true&size=30">
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9ecd,100:ffc2e0&height=180&section=header&text=Hi%20there%2C%20I'm%20Ferris%20%F0%9F%8C%B8&fontSize=42&fontColor=ffffff&fontAlignY=32&desc=%E2%9C%A8%20welcome%20to%20my%20repo%20%E2%9C%A8&descSize=16&descAlignY=55&animation=fadeIn" width="100%" />
+  <br />
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+World!+👋;This+is+Ferris!+💻;Nice+to+meet+you!&center=true&size=30">
 </h1>
 
 📫 How to reach me: [ferris.evans@outlook.com](mailto:ferris.evans@outlook.com)   <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=FerrisEvans">
@@ -61,7 +60,8 @@ Here are some ideas to get you started:
 
 <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=8&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook,Less&size_weight=0.7&count_weight=0.3" />
 
-<hr />
 <h1 align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffc2e0,100:ff9ecd&height=120&section=footer&text=thanks%20for%20visiting!%20%F0%9F%92%95&fontSize=24&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%" />
 </h1>
+
+<hr />
