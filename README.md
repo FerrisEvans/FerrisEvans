@@ -29,8 +29,8 @@ Here are some ideas to get you started:
 
 ### My Basic Statistics
 <div style="text-align:center;">
-    <img height="160px" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&show_icons=true&hide_title=true&theme=radical&hide_border=true&bg_color=0,ff9ecd,ffc2e0&title_color=ffffff&text_color=5c1046&icon_color=ffffff" alt="GitHub stats" />
-  <img height="160px" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&background=FFF0F7&ring=F06EA9&fire=FF6FB5&currStreakLabel=D6338F" alt="streak stats" />
+    <img height="158px" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&show_icons=true&hide_title=true&theme=radical&hide_border=true&bg_color=0,ff9ecd,ffc2e0&title_color=ffffff&text_color=5c1046&icon_color=ffffff" alt="GitHub stats" />
+  <img height="158px" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&background=FFF0F7&ring=F06EA9&fire=FF6FB5&currStreakLabel=D6338F" alt="streak stats" />
 
 <!-- ---------------------------------- -->
 <!--
