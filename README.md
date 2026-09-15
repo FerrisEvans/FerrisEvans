@@ -15,7 +15,7 @@
 
 ### My Commit Trends
 
-![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=FerrisEvans&theme=react&hide+border=true&hide_title=true&radius=10)
+![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=FerrisEvans&hide+border=true&hide_title=true&radius=10&theme=radical&bg_color=0,ff9ecd,ffc2e0&title_color=ffffff&text_color=5c1046)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/FerrisEvans/FerrisEvans/blob/output/github-contribution-grid-snake-dark.svg" />
