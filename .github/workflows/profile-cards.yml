@@ -1,0 +1,77 @@
+name: generate profile cards
+
+on:
+  # run automatically every day
+  schedule:
+    - cron: "30 0 * * *"
+
+  # allows to manually run the job at any time
+  workflow_dispatch:
+
+  # regenerate whenever the card configuration changes
+  push:
+    branches:
+    - main
+    paths:
+    - .github/workflows/profile-cards.yml
+    - .github/profile-3d-settings.json
+
+env:
+  # single place to switch the theme of every generated card
+  # (see the theme list of vn7n24fzkq/github-profile-summary-cards; github-stats-extended cards in README.md use the same name)
+  CARD_THEME: radical
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # streak card, replaces the public streak-stats.demolab.com endpoint
+      - name: generate streak.svg
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: >-
+            {"user": "${{ github.repository_owner }}", "theme": "${{ env.CARD_THEME }}",
+            "hide_border": "true", "timezone": "Asia/Shanghai", "exclude_days": "Sun,Sat"}
+          path: dist/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # profile details (contribution trend), stats, language and productive time cards
+      - name: generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          UTC_OFFSET: 8
+          EXCLUDE: "HTML,CSS,CMake,Less,Jupyter Notebook"
+          THEME: ${{ env.CARD_THEME }}
+          AUTO_PUSH: false
+
+      # 3D contribution calendar, colors are defined in .github/profile-3d-settings.json
+      - name: generate 3D contribution calendar
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/profile-3d-settings.json
+
+      - name: collect cards
+        run: |
+          mkdir -p dist/summary dist/3d
+          cp profile-summary-card-output/${CARD_THEME}/*.svg dist/summary/
+          cp profile-3d-contrib/*.svg dist/3d/
+
+      # push the content of <build_dir> to a branch, same as the snake workflow
+      - name: push cards to the profile-cards branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: profile-cards
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

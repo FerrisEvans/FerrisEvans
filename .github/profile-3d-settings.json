@@ -1,0 +1,27 @@
+[
+  {
+    "type": "normal",
+    "fileName": "profile-radical.svg",
+    "backgroundColor": "#141321",
+    "foregroundColor": "#a9fef7",
+    "strongColor": "#fe428e",
+    "weakColor": "#6e6a86",
+    "radarColor": "#ae81ff",
+    "growingAnimation": true,
+    "contribColors": ["#221f33", "#5b1f47", "#94256a", "#cf2f82", "#fe428e"]
+  },
+  {
+    "type": "radar_contrib_only",
+    "fileName": "radar-radical.svg",
+    "backgroundColor": "#141321",
+    "foregroundColor": "#a9fef7",
+    "weakColor": "#6e6a86",
+    "radarColor": "#fe428e"
+  },
+  {
+    "type": "pie_lang_only",
+    "fileName": "pie-lang-radical.svg",
+    "backgroundColor": "#141321",
+    "foregroundColor": "#a9fef7"
+  }
+]
