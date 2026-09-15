@@ -10,7 +10,7 @@
 ### My Basic Statistics
 <div style="text-align:center;">
   <img height="150px" src="https://github-stats-extended.vercel.app/api?username=FerrisEvans&hide_title=true&show_icons=true&include_all_commits=true&theme=radical&hide_border=true&bg_color=0,ff9ecd,ffc2e0&title_color=ffffff&text_color=5c1046&icon_color=ffffff" alt="GitHub stats" />  
-  <img height="150px" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&background=FFF0F7&ring=F06EA9&fire=FF6FB5&currStreakLabel=D6338F" alt="streak stats" />
+  <img height="150px" src="https://streak-stats.demolab.com?user=FerrisEvans&theme=oceanic-next&hide_border=true&timezone=UTC%2B8&exclude_days=Sun%2CSat&ring=F06EA9&background=0%2CFFC2E0%2CFF9ECD&fire=FF6FB5&currStreakLabel=D6338F&stroke=AE296C&currStreakNum=D6412A&sideNums=D6412A&sideLabels=D6338F&dates=CA5F82&excludeDaysLabel=CA5F82" alt="GitHub Streak" />
 </div>
 
 ### My Commit Trends
