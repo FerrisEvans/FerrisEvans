@@ -29,8 +29,8 @@ Here are some ideas to get you started:
 
 ### My Basic Statistics
 <div style="text-align:center;">
-    <img height="162px" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&show_icons=true&hide_title=true&theme=radical&hide_border=true&bg_color=0,ff9ecd,ffc2e0&title_color=ffffff&text_color=5c1046&icon_color=ffffff" alt="GitHub stats" />
-  <img height="162px" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&background=FFF0F7&ring=F06EA9&fire=FF6FB5&currStreakLabel=D6338F" alt="streak stats" />
+    <img height="161.5px" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&show_icons=true&hide_title=true&theme=radical&hide_border=true&bg_color=0,ff9ecd,ffc2e0&title_color=ffffff&text_color=5c1046&icon_color=ffffff" alt="GitHub stats" />
+  <img height="161.5px" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&background=FFF0F7&ring=F06EA9&fire=FF6FB5&currStreakLabel=D6338F" alt="streak stats" />
 
 <!-- ---------------------------------- -->
 <!--
@@ -39,6 +39,7 @@ Here are some ideas to get you started:
 -->
 
 </div>
+
 ### My Commit Trends
 
 ![github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=FerrisEvans&theme=react&hide+border=true&hide_title=true&radius=10)
