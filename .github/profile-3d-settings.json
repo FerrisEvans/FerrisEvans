@@ -9,19 +9,5 @@
     "radarColor": "#f06ea9",
     "growingAnimation": true,
     "contribColors": ["#ffe3f0", "#ff9ecd", "#f06ea9", "#d6338f", "#ae296c"]
-  },
-  {
-    "type": "radar_contrib_only",
-    "fileName": "radar-pink.svg",
-    "backgroundColor": "#ffc2e0",
-    "foregroundColor": "#5c1046",
-    "weakColor": "#ca5f82",
-    "radarColor": "#f06ea9"
-  },
-  {
-    "type": "pie_lang_only",
-    "fileName": "pie-lang-pink.svg",
-    "backgroundColor": "#ffc2e0",
-    "foregroundColor": "#5c1046"
   }
 ]
