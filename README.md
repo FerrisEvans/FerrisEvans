@@ -29,6 +29,9 @@ Here are some ideas to get you started:
 
 ### My Basic Statistics
 <div style="text-align:center;">
+    <img height="139.5px" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&show_icons=true&theme=radical&hide_border=true&bg_color=0,ff9ecd,ffc2e0&title_color=ffffff&text_color=5c1046&icon_color=ffffff" alt="GitHub stats" />
+  <img height="139.5px" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&background=FFF0F7&ring=F06EA9&fire=FF6FB5&currStreakLabel=D6338F" alt="streak stats" />
+  <br />
   <img height="139.5px" style="display:inline-block; max-width: 100%;" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
   <img height="139.5px" style="display:inline-block; max-width: 100%;" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&show_icons=true&include_all_commits=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&mode=weekly&background=0%2C73FA79%2C4BAAEB&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite" />
 </div>
@@ -55,3 +58,6 @@ Here are some ideas to get you started:
 <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=8&hide_title=true&hide_border=true&theme=react&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook,Less&size_weight=0.7&count_weight=0.3" />
 
 <hr />
+<h1 align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffc2e0,100:ff9ecd&height=120&section=footer&text=thanks%20for%20visiting!%20%F0%9F%92%95&fontSize=24&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%" />
+</h1>
