@@ -13,12 +13,10 @@ Here are some ideas to get you started:
 -  ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
-
-  <img height="143.5px" style="display:inline-block; margin-right:10px;" src="https://github-readme-stats.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
 -->
+
 <h1 align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9ecd,100:ffc2e0&height=180&section=header&text=Hi%20there%2C%20I'm%20Ferris%20%F0%9F%8C%B8&fontSize=42&fontColor=ffffff&fontAlignY=32&desc=%E2%9C%A8%20welcome%20to%20my%20repo%20%E2%9C%A8&descSize=16&descAlignY=55&animation=fadeIn" width="100%" />
-  <br />
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+World!+👋;This+is+Ferris!+💻;Nice+to+meet+you!&center=true&size=30">
 </h1>
 
@@ -30,12 +28,6 @@ Here are some ideas to get you started:
 <div style="text-align:center;">
     <img height="150px" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&show_icons=true&hide_title=true&theme=radical&hide_border=true&bg_color=0,ff9ecd,ffc2e0&title_color=ffffff&text_color=5c1046&icon_color=ffffff" alt="GitHub stats" />
   <img height="150px" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&background=FFF0F7&ring=F06EA9&fire=FF6FB5&currStreakLabel=D6338F" alt="streak stats" />
-
-<!-- ---------------------------------- -->
-<!--
-  <img height="139.5px" style="display:inline-block; max-width: 100%;" src="https://github-readme-stats-one-bice.vercel.app/api?username=FerrisEvans&rank_icon=percentile&hide_title=true&hide_border=true&show_icons=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
-  <img height="139.5px" style="display:inline-block; max-width: 100%;" src="https://streak-stats.demolab.com/?user=FerrisEvans&hide_border=true&show_icons=true&include_all_commits=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&mode=weekly&background=0%2C73FA79%2C4BAAEB&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite" />
--->
 
 </div>
 
