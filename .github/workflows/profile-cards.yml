@@ -15,6 +15,7 @@ on:
     paths:
     - .github/workflows/profile-cards.yml
     - .github/profile-3d-settings.json
+    - .github/scripts/**
 
 jobs:
   generate:
@@ -29,7 +30,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # streak card, replaces the public streak-stats.demolab.com endpoint
+      # streak card, replaces the public streak-stats.demolab.com endpoint;
+      # rendered twice so README.md can pick the variant matching the reader's theme
       - name: generate streak.svg
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
@@ -42,14 +44,27 @@ jobs:
           path: dist/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: generate streak-dark.svg
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: >-
+            {"user": "${{ github.repository_owner }}", "theme": "oceanic-next",
+            "hide_border": "true", "timezone": "Asia/Shanghai", "exclude_days": "Sun,Sat",
+            "ring": "FF6FB5", "background": "0,2B1622,4A1F38", "fire": "FF9ECD",
+            "currStreakLabel": "FF9ECD", "stroke": "7A2F5A", "currStreakNum": "FFD6EA",
+            "sideNums": "FFD6EA", "sideLabels": "FF9ECD", "dates": "A56D8A", "excludeDaysLabel": "A56D8A"}
+          path: dist/streak-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       # snake eating the contribution graph, light and dark variants
       - name: generate the contribution snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # pink cells, plum snake (light); dark plum cells, bright pink snake (dark)
           outputs: |
-            dist/snake/snake.svg
-            dist/snake/snake-dark.svg?palette=github-dark
+            dist/snake/snake.svg?color_snake=#ae296c&color_dots=#ffe3f0,#ffc2e0,#ff9ecd,#f06ea9,#d6338f
+            dist/snake/snake-dark.svg?palette=github-dark&color_snake=#ff6fb5&color_dots=#3a1f31,#7a2f5a,#b03a80,#e05aa8,#ff9ecd
 
       # 3D contribution calendar, colors are defined in .github/profile-3d-settings.json
       - name: generate 3D contribution calendar
@@ -94,6 +109,23 @@ jobs:
           }
           render profile-details "theme=highcontrast&animation=rgb&name=Ferris&text_color=00ff00&bg_color=001900"
           render productive-time "theme=highcontrast&animation=rgb&utcOffset=8&text_color=00ff00&bg_color=001900"
+
+      # scoreboard, replacing the third party stats card; the PAT counts private
+      # contributions as numbers, GITHUB_TOKEN alone keeps it to public ones
+      - name: generate scoreboard card
+        env:
+          GH_TOKEN: ${{ env.LANGS_PAT || secrets.GITHUB_TOKEN }}
+          GH_USERNAME: ${{ github.repository_owner }}
+          OUT_DIR: dist/stats
+        run: python3 .github/scripts/stats-card.py
+
+      # bytes per language in the public repos this account owns; GITHUB_TOKEN is enough
+      - name: generate repo languages card
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: ${{ github.repository_owner }}
+          OUT_DIR: dist/langs
+        run: python3 .github/scripts/repo-languages.py
 
       # languages of the code this account actually wrote, private org repos included;
       # skipped until LANGS_PAT (classic PAT, repo scope) exists, the other cards still update

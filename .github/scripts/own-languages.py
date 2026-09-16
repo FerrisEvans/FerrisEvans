@@ -17,32 +17,27 @@ Environment:
                already defines that on macOS and Linux)
   EXTRA_EMAILS  comma separated commit emails that are not registered on the
                 GitHub account, so their commits count too
-  OUT_DIR   where languages.svg is written
+  OUT_DIR   where written.svg and written-dark.svg are written
 """
 from __future__ import annotations
 
-import json
 import os
 import re
 import subprocess
 import sys
 import tempfile
-import urllib.error
-import urllib.request
 from collections import defaultdict
 from pathlib import Path
 
-API = "https://api.github.com"
+from github_api import api
+from langcard import HIDE, MAX_LANGS, THEMES, rank, render
+
 TOKEN = os.environ.get("GH_TOKEN", "")
 USERNAME = os.environ.get("GH_USERNAME", "")
 OUT_DIR = Path(os.environ.get("OUT_DIR", "dist/langs"))
+LABEL = "✍️ WRITTEN BY ME"
 # Commit emails that are not registered on the GitHub account; see own_commits().
 EXTRA_EMAILS = [e.strip() for e in os.environ.get("EXTRA_EMAILS", "").split(",") if e.strip()]
-
-# Languages that are noise on a profile card, matching the `hide` list of the
-# byte based card in README.md.
-HIDE = {"HTML", "CSS", "CMake", "Less", "Jupyter Notebook", "Markdown", "Text",
-        "JSON", "YAML"}  # markup and data, not code
 
 # Third party or generated code that no .gitattributes marks as vendored.
 VENDOR = re.compile(
@@ -68,51 +63,12 @@ EXT_LANG = {
     ".less": "Less", ".md": "Markdown", ".ipynb": "Jupyter Notebook",
 }
 
-# github-linguist colors, only for the languages this account actually uses;
-# anything else falls back to a neutral grey.
-COLORS = {
-    "C": "#555555", "C++": "#f34b7d", "C#": "#178600", "Swift": "#F05138",
-    "Python": "#3572A5", "TypeScript": "#3178c6", "JavaScript": "#f1e05a",
-    "Go": "#00ADD8", "Rust": "#dea584", "Ruby": "#701516", "Java": "#b07219",
-    "Kotlin": "#A97BFF", "Objective-C": "#438eff", "Shell": "#89e051",
-    "GDScript": "#355570", "Solidity": "#AA6746", "Lua": "#000080", "SQL": "#e38c00",
-    "PHP": "#4F5D95", "Dart": "#00B4AB", "Vue": "#41b883", "SCSS": "#c6538c",
-    "YAML": "#cb171e", "JSON": "#292929", "Elixir": "#6e4a7e", "Haskell": "#5e5086",
-}
-FALLBACK_COLOR = "#8b949e"
-
 # Only ask git for files we can attribute to a language we display.
 CODE_PATHSPEC = [f"*{ext}" for ext, lang in EXT_LANG.items() if lang not in HIDE]
 
 # Prefetch hint only, see added_lines(): changing it changes download size and
 # runtime, never the numbers on the card.
 BLOB_PREFETCH_LIMIT = "200k"
-
-
-def api(path: str, params: dict | None = None) -> list:
-    """GET every page of a REST collection."""
-    items: list = []
-    url = f"{API}{path}"
-    if params:
-        url += "?" + "&".join(f"{k}={v}" for k, v in params.items())
-    while url:
-        req = urllib.request.Request(url, headers={
-            "Authorization": f"Bearer {TOKEN}",
-            "Accept": "application/vnd.github+json",
-            "User-Agent": f"{USERNAME}-own-languages",
-        })
-        try:
-            with urllib.request.urlopen(req, timeout=60) as res:
-                items.extend(json.load(res))
-                link = res.headers.get("Link", "")
-        except urllib.error.HTTPError as err:
-            if err.code in (403, 404, 409):  # no access, empty repo, rate limited
-                print(f"  skipped {path}: HTTP {err.code}", file=sys.stderr)
-                return items
-            raise
-        nxt = re.search(r'<([^>]+)>;\s*rel="next"', link)
-        url = nxt.group(1) if nxt else None
-    return items
 
 
 def list_repos() -> list[dict]:
@@ -182,54 +138,6 @@ def added_lines(clone_url: str, shas: list[str], workdir: Path) -> dict[str, int
     return per_lang
 
 
-def svg(langs: list[tuple[str, int]], total: int) -> str:
-    """A compact card in the same pink palette as the other cards in README.md."""
-    width, pad, bar_y, bar_h = 300, 25, 55, 8
-    rows = (len(langs) + 1) // 2
-    height = bar_y + bar_h + 22 + rows * 25
-    inner = width - pad * 2
-
-    segments, x = [], pad
-    for name, lines in langs:
-        w = inner * lines / total
-        segments.append(
-            f'<rect x="{x:.2f}" y="{bar_y}" width="{max(w, 1):.2f}" height="{bar_h}" '
-            f'fill="{COLORS.get(name, FALLBACK_COLOR)}" />'
-        )
-        x += w
-
-    entries = []
-    for i, (name, lines) in enumerate(langs):
-        col, row = i % 2, i // 2
-        cx = pad + col * (inner / 2)
-        cy = bar_y + bar_h + 28 + row * 25
-        pct = 100 * lines / total
-        entries.append(
-            f'<circle cx="{cx + 5:.1f}" cy="{cy - 4:.1f}" r="5" '
-            f'fill="{COLORS.get(name, FALLBACK_COLOR)}" />'
-            f'<text x="{cx + 16:.1f}" y="{cy:.1f}" class="lang">{name} {pct:.2f}%</text>'
-        )
-
-    return f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" \
-xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" gradientTransform="rotate(0)">
-      <stop offset="0%" stop-color="#ffc2e0" />
-      <stop offset="100%" stop-color="#ff9ecd" />
-    </linearGradient>
-  </defs>
-  <style>
-    .title {{ font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #5c1046; }}
-    .lang {{ font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #5c1046; }}
-  </style>
-  <rect width="{width}" height="{height}" rx="4.5" fill="url(#bg)" />
-  <text x="{pad}" y="35" class="title">Lines I wrote, by language</text>
-  <g>{''.join(segments)}</g>
-  <g>{''.join(entries)}</g>
-</svg>
-"""
-
-
 def main() -> int:
     if not TOKEN or not USERNAME:
         print("GH_TOKEN and GH_USERNAME are required", file=sys.stderr)
@@ -265,14 +173,15 @@ def main() -> int:
         print("no commits found - is the token allowed to read the repos?", file=sys.stderr)
         return 1
 
-    ranked = sorted(totals.items(), key=lambda kv: -kv[1])[:12]
-    total = sum(lines for _, lines in ranked)
+    ranked = rank(totals)[:MAX_LANGS]
 
     # Only the SVG is published: the per repository breakdown would put private
     # repository names on a public branch.
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    (OUT_DIR / "languages.svg").write_text(svg(ranked, total))
-    print(f"wrote {OUT_DIR}/languages.svg from {len(counted)} repositories"
+    for theme in THEMES:
+        name = "written.svg" if theme == "light" else f"written-{theme}.svg"
+        (OUT_DIR / name).write_text(render(ranked, LABEL, theme))
+    print(f"wrote {OUT_DIR}/written.svg from {len(counted)} repositories"
           + (f", {len(failures)} skipped: {', '.join(failures)}" if failures else ""))
     return 0
 

@@ -8,6 +8,28 @@
     "weakColor": "#ca5f82",
     "radarColor": "#f06ea9",
     "growingAnimation": true,
-    "contribColors": ["#ffe3f0", "#ff9ecd", "#f06ea9", "#d6338f", "#ae296c"]
+    "contribColors": [
+      "#ffe3f0",
+      "#ff9ecd",
+      "#f06ea9",
+      "#d6338f",
+      "#ae296c"
+    ],
+    "darkMode": {
+      "type": "normal",
+      "backgroundColor": "#2b1622",
+      "foregroundColor": "#ffd6ea",
+      "strongColor": "#ff9ecd",
+      "weakColor": "#a56d8a",
+      "radarColor": "#ff6fb5",
+      "growingAnimation": true,
+      "contribColors": [
+        "#3a1f31",
+        "#7a2f5a",
+        "#b03a80",
+        "#e05aa8",
+        "#ff9ecd"
+      ]
+    }
   }
 ]
