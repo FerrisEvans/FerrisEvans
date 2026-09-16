@@ -17,7 +17,7 @@ Environment:
                already defines that on macOS and Linux)
   EXTRA_EMAILS  comma separated commit emails that are not registered on the
                 GitHub account, so their commits count too
-  OUT_DIR   where languages.json and languages.svg are written
+  OUT_DIR   where languages.svg is written
 """
 from __future__ import annotations
 
@@ -268,10 +268,9 @@ def main() -> int:
     ranked = sorted(totals.items(), key=lambda kv: -kv[1])[:12]
     total = sum(lines for _, lines in ranked)
 
+    # Only the SVG is published: the per repository breakdown would put private
+    # repository names on a public branch.
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    (OUT_DIR / "languages.json").write_text(json.dumps(
-        {"languages": dict(ranked), "repositories": counted, "skipped": failures},
-        indent=2, ensure_ascii=False))
     (OUT_DIR / "languages.svg").write_text(svg(ranked, total))
     print(f"wrote {OUT_DIR}/languages.svg from {len(counted)} repositories"
           + (f", {len(failures)} skipped: {', '.join(failures)}" if failures else ""))

@@ -42,6 +42,15 @@ jobs:
           path: dist/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      # snake eating the contribution graph, light and dark variants
+      - name: generate the contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake/snake.svg
+            dist/snake/snake-dark.svg?palette=github-dark
+
       # 3D contribution calendar, colors are defined in .github/profile-3d-settings.json
       - name: generate 3D contribution calendar
         uses: yoshi389111/github-profile-3d-contrib@latest
