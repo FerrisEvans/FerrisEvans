@@ -32,9 +32,15 @@
 <!-- same layout as My Stats, aspect ratios 700x200 and 340x200 -->
 <p align="center">
   <!-- github-profile-summary-cards, contributions in the last year -->
-  <img width="66.63%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/profile-details.svg" alt="Profile details" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/profile-details-dark.svg" />
+    <img width="66.63%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/profile-details.svg" alt="Profile details" />
+  </picture>
   <!-- github-profile-summary-cards, UTC+8 -->
-  <img width="32.37%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/productive-time.svg" alt="Productive time" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/productive-time-dark.svg" />
+    <img width="32.37%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/productive-time.svg" alt="Productive time" />
+  </picture>
 </p>
 
 ### 🏙️ Commit City

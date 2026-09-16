@@ -101,14 +101,19 @@ jobs:
           for i in $(seq 1 60); do curl -sf -o /dev/null "http://localhost:${PORT}/" && break; sleep 2; done
           mkdir -p ../dist/summary
           render() {
-            curl -sSf -o "../dist/summary/$1.svg" "http://localhost:${PORT}/api/cards/$1?username=${USERNAME}&mock=0&$2"
+            curl -sSf -o "../dist/summary/$1.svg" "http://localhost:${PORT}/api/cards/$2?username=${USERNAME}&mock=0&$3"
             # the handlers answer failures with a 200 error card, keep the previous cards instead
             if grep -q 'ERROR!!!' "../dist/summary/$1.svg"; then
               echo "::error::$1 card could not be generated"; cat dev-server.log; exit 1
             fi
           }
-          render profile-details "theme=highcontrast&animation=rgb&name=Ferris&text_color=00ff00&bg_color=001900"
-          render productive-time "theme=highcontrast&animation=rgb&utcOffset=8&text_color=00ff00&bg_color=001900"
+          # one file per README theme, same layout, palette of the other cards
+          LIGHT="title_color=5c1046&text_color=5c1046&bg_color=ffc2e0&icon_color=d6338f&chart_color=d6338f"
+          DARK="text_color=00ff00&bg_color=001900"
+          render profile-details       profile-details "theme=highcontrast&animation=rgb&name=Ferris&$LIGHT"
+          render profile-details-dark  profile-details "theme=highcontrast&animation=rgb&name=Ferris&$DARK"
+          render productive-time       productive-time "theme=highcontrast&animation=rgb&utcOffset=8&$LIGHT"
+          render productive-time-dark  productive-time "theme=highcontrast&animation=rgb&utcOffset=8&$DARK"
 
       # scoreboard, replacing the third party stats card; the PAT counts private
       # contributions as numbers, GITHUB_TOKEN alone keeps it to public ones
