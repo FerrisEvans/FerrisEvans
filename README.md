@@ -18,7 +18,7 @@
 ### My Commit Trends
 
 <!-- Option A: github-profile-summary-cards, contributions in the last year -->
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=FerrisEvans&theme=highcontrast&animation=rgb&name=Ferris&text_color=00ff00&bg_color=001900" alt="Profile details" />
+<img width="100%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/profile-details.svg" alt="Profile details" />
 
 <!-- Option B: github-profile-3d-contrib -->
 <img width="100%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/3d/profile-pink.svg" alt="3D contribution calendar" />
@@ -30,15 +30,16 @@
 </picture>
 <br />
 
-### My Favourite Langs
+### My Favourite Langs & When I Code
 
-<!-- github-stats-extended -->
-<img src="https://github-stats-extended.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=radical&bg_color=0,ffc2e0,ff9ecd&title_color=5c1046&text_color=5c1046&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook,Less&size_weight=0.7&count_weight=0.3" />
-
-### When I Code
-
-<!-- github-profile-summary-cards, UTC+8 -->
-<img height="180px" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=FerrisEvans&theme=highcontrast&animation=rgb&utcOffset=8&text_color=00ff00&bg_color=001900" alt="Productive time" />
+<!-- both cards share the 1.7 aspect ratio (card_width=400 for a 235px high top-langs card, 340x200 productive time), so equal widths give equal heights -->
+<p>
+  <!-- github-stats-extended, vendored code is excluded via .gitattributes in the source repos; weights: size 1, repo count 0.2 -->
+  <img align="left" width="49%" src="https://github-stats-extended.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=radical&bg_color=0,ffc2e0,ff9ecd&title_color=5c1046&text_color=5c1046&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook&size_weight=1&count_weight=0.2&card_width=400" alt="Top languages" />
+  <!-- github-profile-summary-cards, UTC+8 -->
+  <img align="right" width="49%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/productive-time.svg" alt="Productive time" />
+</p>
+<br clear="all" />
 
 <h1 align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffc2e0,100:ff9ecd&height=120&section=footer&text=I%20walk%20backwards%20into%20the%20future%20with%20my%20eyes%20fixed%20on%20my%20past.%20%F0%9F%92%95&fontSize=24&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%" />

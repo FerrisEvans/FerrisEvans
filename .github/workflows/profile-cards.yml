@@ -47,6 +47,42 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/profile-3d-settings.json
 
+      # profile details and productive time cards: run the same route handlers as
+      # github-profile-summary-cards.vercel.app locally, with our own token, so custom colors keep working
+      - name: checkout github-profile-summary-cards
+        uses: actions/checkout@v4
+        with:
+          repository: vn7n24fzkq/github-profile-summary-cards
+          ref: e722eded97059b31d7e8ad3ae0267b74ff24172d
+          path: .summary-cards
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: generate profile summary cards
+        working-directory: .summary-cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TS_NODE_TRANSPILE_ONLY: "true"
+          PORT: "3000"
+          USERNAME: ${{ github.repository_owner }}
+        run: |
+          npm ci --no-audit --no-fund
+          node -r ts-node/register scripts/dev-server.ts > dev-server.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf -o /dev/null "http://localhost:${PORT}/" && break; sleep 2; done
+          mkdir -p ../dist/summary
+          render() {
+            curl -sSf -o "../dist/summary/$1.svg" "http://localhost:${PORT}/api/cards/$1?username=${USERNAME}&mock=0&$2"
+            # the handlers answer failures with a 200 error card, keep the previous cards instead
+            if grep -q 'ERROR!!!' "../dist/summary/$1.svg"; then
+              echo "::error::$1 card could not be generated"; cat dev-server.log; exit 1
+            fi
+          }
+          render profile-details "theme=highcontrast&animation=rgb&name=Ferris&text_color=00ff00&bg_color=001900"
+          render productive-time "theme=highcontrast&animation=rgb&utcOffset=8&text_color=00ff00&bg_color=001900"
+
       - name: collect cards
         run: |
           mkdir -p dist/3d
