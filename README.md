@@ -7,7 +7,7 @@
 
 <hr />
 
-### My Basic Statistics
+### My Stats
 <div style="text-align:center;">
   <!-- github-stats-extended -->
   <img height="150px" src="https://github-stats-extended.vercel.app/api?username=FerrisEvans&hide_title=true&show_icons=true&include_all_commits=true&theme=radical&hide_border=true&bg_color=0,ff9ecd,ffc2e0&title_color=ffffff&text_color=5c1046&icon_color=ffffff" alt="GitHub stats" />  
@@ -15,10 +15,16 @@
   <img height="150px" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/streak.svg" alt="GitHub Streak" />
 </div>
 
-### My Commit Trends
+### My Activity
 
-<!-- Option A: github-profile-summary-cards, contributions in the last year -->
-<img width="100%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/profile-details.svg" alt="Profile details" />
+<!-- widths follow the aspect ratios (profile details 700x200, productive time 340x200), so both cards end up the same height -->
+<p>
+  <!-- Option A: github-profile-summary-cards, contributions in the last year -->
+  <img align="left" width="63%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/profile-details.svg" alt="Profile details" />
+  <!-- github-profile-summary-cards, UTC+8 -->
+  <img align="right" width="30.6%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/productive-time.svg" alt="Productive time" />
+</p>
+<br clear="all" />
 
 <!-- Option B: github-profile-3d-contrib -->
 <img width="100%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/3d/profile-pink.svg" alt="3D contribution calendar" />
@@ -30,16 +36,10 @@
 </picture>
 <br />
 
-### My Favourite Langs & When I Code
+### My Languages
 
-<!-- both cards share the 1.7 aspect ratio (card_width=400 for a 235px high top-langs card, 340x200 productive time), so equal widths give equal heights -->
-<p>
-  <!-- github-stats-extended, vendored code is excluded via .gitattributes in the source repos; weights: size 1, repo count 0.2 -->
-  <img align="left" width="47%" src="https://github-stats-extended.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=radical&bg_color=0,ffc2e0,ff9ecd&title_color=5c1046&text_color=5c1046&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook&size_weight=1&count_weight=0.2&card_width=400" alt="Top languages" />
-  <!-- github-profile-summary-cards, UTC+8 -->
-  <img align="right" width="47%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/productive-time.svg" alt="Productive time" />
-</p>
-<br clear="all" />
+<!-- github-stats-extended, vendored code is excluded via .gitattributes in the source repos; weights: size 1, repo count 0.2 -->
+<img src="https://github-stats-extended.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=radical&bg_color=0,ffc2e0,ff9ecd&title_color=5c1046&text_color=5c1046&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook&size_weight=1&count_weight=0.2" alt="Top languages" />
 
 <h1 align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffc2e0,100:ff9ecd&height=120&section=footer&text=I%20walk%20backwards%20into%20the%20future%20with%20my%20eyes%20fixed%20on%20my%20past.%20%F0%9F%92%95&fontSize=24&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%" />
