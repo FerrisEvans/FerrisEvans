@@ -1,7 +1,8 @@
 <p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9ecd,100:ffc2e0&height=180&section=header&text=Hi%20there%2C%20I'm%20Ferris%20%F0%9F%8C%B8&fontSize=42&fontColor=ffffff&fontAlignY=32&desc=%E2%9C%A8%20welcome%20to%20my%20repo%20%E2%9C%A8&descSize=16&descAlignY=55&animation=fadeIn" alt="Hi there, I'm Ferris" />
-  <!-- readme-typing-svg, the maintained host is demolab.com; herokuapp.com is the retired one -->
-  <img src="https://readme-typing-svg.demolab.com/?lines=Hello,+World!+👋;This+is+Ferris!+💻;Nice+to+meet+you!&center=true&size=30&color=D6338F" alt="Hello, World! This is Ferris! Nice to meet you!" />
+  <!-- readme-typing-svg, the maintained host is demolab.com; herokuapp.com is the retired one.
+       the emoji must be percent encoded: demolab answers 400 for raw ones -->
+  <img src="https://readme-typing-svg.demolab.com/?lines=Hello,+World!+%F0%9F%91%8B;This+is+Ferris!+%F0%9F%92%BB;Nice+to+meet+you!&center=true&size=30&color=D6338F" alt="Hello, World! This is Ferris! Nice to meet you!" />
 </p>
 
 📫 How to reach me: [ferris.evans@outlook.com](mailto:ferris.evans@outlook.com)   <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=FerrisEvans">
