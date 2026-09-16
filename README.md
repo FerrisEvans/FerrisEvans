@@ -35,9 +35,9 @@
 <!-- both cards share the 1.7 aspect ratio (card_width=400 for a 235px high top-langs card, 340x200 productive time), so equal widths give equal heights -->
 <p>
   <!-- github-stats-extended, vendored code is excluded via .gitattributes in the source repos; weights: size 1, repo count 0.2 -->
-  <img align="left" width="49%" src="https://github-stats-extended.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=radical&bg_color=0,ffc2e0,ff9ecd&title_color=5c1046&text_color=5c1046&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook&size_weight=1&count_weight=0.2&card_width=400" alt="Top languages" />
+  <img align="left" width="47%" src="https://github-stats-extended.vercel.app/api/top-langs?username=FerrisEvans&layout=compact&langs_count=20&hide_title=true&hide_border=true&theme=radical&bg_color=0,ffc2e0,ff9ecd&title_color=5c1046&text_color=5c1046&locale=en&hide=HTML,CSS,CMake,Less,Jupyter%20Notebook&size_weight=1&count_weight=0.2&card_width=400" alt="Top languages" />
   <!-- github-profile-summary-cards, UTC+8 -->
-  <img align="right" width="49%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/productive-time.svg" alt="Productive time" />
+  <img align="right" width="47%" src="https://raw.githubusercontent.com/FerrisEvans/FerrisEvans/profile-cards/summary/productive-time.svg" alt="Productive time" />
 </p>
 <br clear="all" />
 
