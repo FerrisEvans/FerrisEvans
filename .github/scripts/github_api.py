@@ -47,19 +47,6 @@ def api(path: str, params: dict | None = None) -> list | dict:
     return items
 
 
-def graphql(query: str, **variables) -> dict:
-    """POST a GraphQL query and return its `data`, raising on GraphQL errors."""
-    payload = json.dumps({"query": query, "variables": variables}).encode()
-    req = _request(f"{API}/graphql")
-    req.data = payload
-    req.add_header("Content-Type", "application/json")
-    with urllib.request.urlopen(req, timeout=TIMEOUT_S) as res:
-        body = json.load(res)
-    if body.get("errors"):
-        raise RuntimeError(f"GraphQL failed: {body['errors']}")
-    return body["data"]
-
-
 def _request(url: str) -> urllib.request.Request:
     return urllib.request.Request(url, headers={
         "Authorization": f"Bearer {TOKEN}",

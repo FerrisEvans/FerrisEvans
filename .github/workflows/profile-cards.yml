@@ -66,11 +66,13 @@ jobs:
             dist/snake/snake.svg?color_snake=#ae296c&color_dots=#ffe3f0,#ffc2e0,#ff9ecd,#f06ea9,#d6338f
             dist/snake/snake-dark.svg?palette=github-dark&color_snake=#ff6fb5&color_dots=#3a1f31,#7a2f5a,#b03a80,#e05aa8,#ff9ecd
 
-      # 3D contribution calendar, colors are defined in .github/profile-3d-settings.json
+      # 3D contribution calendar, colors are defined in .github/profile-3d-settings.json.
+      # The PAT lets the calendar and the language pie count private and organization
+      # repositories; without it GITHUB_TOKEN keeps both to public contributions.
       - name: generate 3D contribution calendar
         uses: yoshi389111/github-profile-3d-contrib@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ env.LANGS_PAT || secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/profile-3d-settings.json
 
@@ -114,15 +116,6 @@ jobs:
           render profile-details-dark  profile-details "theme=highcontrast&animation=rgb&name=Ferris&$DARK"
           render productive-time       productive-time "theme=highcontrast&animation=rgb&utcOffset=8&$LIGHT"
           render productive-time-dark  productive-time "theme=highcontrast&animation=rgb&utcOffset=8&$DARK"
-
-      # scoreboard, replacing the third party stats card; the PAT counts private
-      # contributions as numbers, GITHUB_TOKEN alone keeps it to public ones
-      - name: generate scoreboard card
-        env:
-          GH_TOKEN: ${{ env.LANGS_PAT || secrets.GITHUB_TOKEN }}
-          GH_USERNAME: ${{ github.repository_owner }}
-          OUT_DIR: dist/stats
-        run: python3 .github/scripts/stats-card.py
 
       # bytes per language in the public repos this account owns; GITHUB_TOKEN is enough
       - name: generate repo languages card
