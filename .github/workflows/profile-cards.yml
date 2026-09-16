@@ -67,12 +67,13 @@ jobs:
             dist/snake/snake-dark.svg?palette=github-dark&color_snake=#ff6fb5&color_dots=#3a1f31,#7a2f5a,#b03a80,#e05aa8,#ff9ecd
 
       # 3D contribution calendar, colors are defined in .github/profile-3d-settings.json.
-      # The PAT lets the calendar and the language pie count private and organization
-      # repositories; without it GITHUB_TOKEN keeps both to public contributions.
+      # Its language pie reads commitContributionsByRepository, which never breaks private
+      # contributions down per repository - they stay an aggregate in restrictedContributionsCount -
+      # so a PAT buys nothing here and GITHUB_TOKEN keeps this third party action least privileged.
       - name: generate 3D contribution calendar
         uses: yoshi389111/github-profile-3d-contrib@latest
         env:
-          GITHUB_TOKEN: ${{ env.LANGS_PAT || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/profile-3d-settings.json
 
