@@ -22,6 +22,9 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      # the secrets context is not allowed in a step `if`, so it is read here first
+      LANGS_PAT: ${{ secrets.LANGS_PAT }}
 
     steps:
       - uses: actions/checkout@v4
@@ -86,9 +89,9 @@ jobs:
       # languages of the code this account actually wrote, private org repos included;
       # skipped until LANGS_PAT (classic PAT, repo scope) exists, the other cards still update
       - name: generate own languages card
-        if: ${{ secrets.LANGS_PAT != '' }}
+        if: env.LANGS_PAT != ''
         env:
-          GH_TOKEN: ${{ secrets.LANGS_PAT }}
+          GH_TOKEN: ${{ env.LANGS_PAT }}
           GH_USERNAME: ${{ github.repository_owner }}
           # old commit emails that can no longer be verified on the account, kept in a
           # secret so a public repository does not advertise them to scrapers
