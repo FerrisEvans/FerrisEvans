@@ -83,6 +83,19 @@ jobs:
           render profile-details "theme=highcontrast&animation=rgb&name=Ferris&text_color=00ff00&bg_color=001900"
           render productive-time "theme=highcontrast&animation=rgb&utcOffset=8&text_color=00ff00&bg_color=001900"
 
+      # languages of the code this account actually wrote, private org repos included;
+      # skipped until LANGS_PAT (classic PAT, repo scope) exists, the other cards still update
+      - name: generate own languages card
+        if: ${{ secrets.LANGS_PAT != '' }}
+        env:
+          GH_TOKEN: ${{ secrets.LANGS_PAT }}
+          GH_USERNAME: ${{ github.repository_owner }}
+          # old commit emails that can no longer be verified on the account, kept in a
+          # secret so a public repository does not advertise them to scrapers
+          EXTRA_EMAILS: ${{ secrets.LANGS_EXTRA_EMAILS }}
+          OUT_DIR: dist/langs
+        run: python3 .github/scripts/own-languages.py
+
       - name: collect cards
         run: |
           mkdir -p dist/3d
