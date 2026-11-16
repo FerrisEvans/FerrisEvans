@@ -5,7 +5,7 @@
   <img src="https://readme-typing-svg.demolab.com/?lines=Hello,+World!+%F0%9F%91%8B;This+is+Ferris!+%F0%9F%92%BB;Nice+to+meet+you!&center=true&size=30&color=D6338F" alt="Hello, World! This is Ferris! Nice to meet you!" />
 </p>
 
-📫 How to reach me: [ferris.evans@outlook.com](mailto:ferris.evans@outlook.com)   <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=FerrisEvans">
+📫 How to reach me: [ferris8bit@icloud.com](mailto:ferris8bit@icloud.com)   <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=FerrisEvans">
 
 <hr />
 
